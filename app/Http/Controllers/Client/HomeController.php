@@ -3,6 +3,9 @@
 namespace App\Http\Controllers\Client;
 
 use App\Http\Controllers\Controller;
+use App\Models\Appointment;
+use App\Models\TypeProfession;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -24,6 +27,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('client.home');
+        // reports
+        $totalClient = User::where("role_id", "=", 3)->get()->count();
+        $totalDoctor = User::where("role_id", "=", 2)->get()->count();
+        $totalAppointmet = Appointment::all()->count();
+        $totalProfessition = TypeProfession::all()->count();
+        return view('client.home', compact("totalClient", "totalDoctor", "totalAppointmet", "totalProfessition"));
     }
 }

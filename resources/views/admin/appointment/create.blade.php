@@ -69,7 +69,7 @@
                                                         <i class="bi bi-envelope-fill"></i>
                                                     </div>
                                                     <textarea name="description" class="form-control radius-30 ps-5"
-                                                        placeholder="Ingresa sobre que necesitas la cita medica"></textarea>
+                                                        placeholder="Ingresa tu diagnostico"></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-12">
