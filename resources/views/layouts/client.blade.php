@@ -11,15 +11,15 @@
     <meta name="author" content="tempload" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assetsClient/images/favicon/favicon.png" />
+    <link rel="icon" type="image/png" href="/assetsClient/images/favicon/favicon.png" />
 
     <!-- Bootstrap & Plugins CSS -->
-    <link href="assetsClient/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="assetsClient/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="assetsClient/css/magnific-popup.css" rel="stylesheet" type="text/css">
+    <link href="/assetsClient/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/assetsClient/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/assetsClient/css/magnific-popup.css" rel="stylesheet" type="text/css">
 
     <!-- Custom CSS -->
-    <link href="assetsClient/css/navy-blue.css" rel="stylesheet" type="text/css">
+    <link href="/assetsClient/css/navy-blue.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -100,7 +100,7 @@
         <!-- ***** Header Background Image End ***** -->
 
         <div class="header-bg">
-            <img src="assetsClient/images/header-bg.svg" class="img-fluid" alt="">
+            <img src="/assetsClient/images/header-bg.svg" class="img-fluid" alt="">
         </div>
 
         <!-- ***** Header Text Start ***** -->
@@ -232,7 +232,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 align-self-center mobile-bottom-fix"
                     data-scroll-reveal="enter right move 30px over 0.6s after 0.3s">
-                    <img src="assetsClient/images/photos/features/navy-blue-1.png" class="img-fluid float-left"
+                    <img src="/assetsClient/images/photos/features/navy-blue-1.png" class="img-fluid float-left"
                         alt="App">
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 align-self-center">
@@ -278,7 +278,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 align-self-center"
                     data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <img src="assetsClient/images/photos/features/navy-blue-2.png" class="img-fluid float-right"
+                    <img src="/assetsClient/images/photos/features/navy-blue-2.png" class="img-fluid float-right"
                         alt="App">
                 </div>
             </div>
@@ -288,7 +288,7 @@
 
 
     <!-- ***** API Parallax Start ***** -->
-    <section class="parallax" data-image="assetsClient/images/photos/parallax.jpg">
+    <section class="parallax" data-image="/assetsClient/images/photos/parallax.jpg">
         <div class="parallax-content">
             <div class="container">
                 <div class="row">
@@ -357,7 +357,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="testimonials-item">
                         <div class="user">
-                            <img src="assetsClient/images/photos/profile/1.jpg" alt="">
+                            <img src="/assetsClient/images/photos/profile/1.jpg" alt="">
                         </div>
                         <div class="testimonials-content">
                             <h3 class="user-name">Fletch Skinner</h3>
@@ -375,7 +375,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="testimonials-item">
                         <div class="user">
-                            <img src="assetsClient/images/photos/profile/2.jpg" alt="">
+                            <img src="/assetsClient/images/photos/profile/2.jpg" alt="">
                         </div>
                         <div class="testimonials-content">
                             <h3 class="user-name">Will Barrow</h3>
@@ -393,7 +393,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="testimonials-item">
                         <div class="user">
-                            <img src="assetsClient/images/photos/profile/3.jpg" alt="">
+                            <img src="/assetsClient/images/photos/profile/3.jpg" alt="">
                         </div>
                         <div class="testimonials-content">
                             <h3 class="user-name">Dominic L. Ement</h3>
@@ -411,7 +411,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="testimonials-item">
                         <div class="user">
-                            <img src="assetsClient/images/photos/profile/4.jpg" alt="">
+                            <img src="/assetsClient/images/photos/profile/4.jpg" alt="">
                         </div>
                         <div class="testimonials-content">
                             <h3 class="user-name">Gunther Bearder</h3>
@@ -429,7 +429,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="testimonials-item">
                         <div class="user">
-                            <img src="assetsClient/images/photos/profile/5.jpg" alt="">
+                            <img src="/assetsClient/images/photos/profile/5.jpg" alt="">
                         </div>
                         <div class="testimonials-content">
                             <h3 class="user-name">Girth Wiedend</h3>
@@ -447,7 +447,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="testimonials-item">
                         <div class="user">
-                            <img src="assetsClient/images/photos/profile/6.jpg" alt="">
+                            <img src="/assetsClient/images/photos/profile/6.jpg" alt="">
                         </div>
                         <div class="testimonials-content">
                             <h3 class="user-name">Hanson Deck</h3>
@@ -599,7 +599,7 @@
 
 
     <!-- ***** Counter Parallax Start ***** -->
-    <section class="parallax-counter" data-image="assetsClient/images/photos/parallax-counter.jpg">
+    <section class="parallax-counter" data-image="/assetsClient/images/photos/parallax-counter.jpg">
         <div class="parallax-content">
             <div class="container">
                 <div class="row">
@@ -657,7 +657,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="blog-post-thumb">
                         <div class="img">
-                            <img src="assetsClient/images/photos/blog/1.jpg" alt="">
+                            <img src="/assetsClient/images/photos/blog/1.jpg" alt="">
                         </div>
                         <h3>
                             <a href="navy-blue-blog-single.html">How to select the best channel manager for your
@@ -673,7 +673,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="blog-post-thumb">
                         <div class="img">
-                            <img src="assetsClient/images/photos/blog/2.jpg" alt="">
+                            <img src="/assetsClient/images/photos/blog/2.jpg" alt="">
                         </div>
                         <h3>
                             <a href="navy-blue-blog-single.html">Find out where you earn most money – Webmania
@@ -689,7 +689,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="blog-post-thumb">
                         <div class="img">
-                            <img src="assetsClient/images/photos/blog/3.jpg" alt="">
+                            <img src="/assetsClient/images/photos/blog/3.jpg" alt="">
                         </div>
                         <h3>
                             <a href="navy-blue-blog-single.html">Earn more profits from Webmania than high seasons!</a>
@@ -712,7 +712,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-md-12 col-sm-12">
-                    <img src="assetsClient/images/logo-navy-blue.png" class="logo" alt="">
+                    <img src="/assetsClient/images/logo-navy-blue.png" class="logo" alt="">
                     <div class="text">Morbi convallis bibendum urna ut viverra. Maecenas quis consequat
                         libero, a feugiat eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus
                         semper.</div>
@@ -765,22 +765,22 @@
 
 
     <!-- jQuery -->
-    <script src="assetsClient/js/jquery-3.6.0.min.js"></script>
+    <script src="/assetsClient/js/jquery-3.6.0.min.js"></script>
 
     <!-- Bootstrap -->
-    <script src="assetsClient/js/popper.js"></script>
-    <script src="assetsClient/js/bootstrap.min.js"></script>
+    <script src="/assetsClient/js/popper.js"></script>
+    <script src="/assetsClient/js/bootstrap.min.js"></script>
 
     <!-- Plugins -->
-    <script src="assetsClient/js/scrollreveal.min.js"></script>
-    <script src="assetsClient/js/parallax.min.js"></script>
-    <script src="assetsClient/js/waypoints.min.js"></script>
-    <script src="assetsClient/js/jquery.counterup.min.js"></script>
-    <script src="assetsClient/js/jquery.magnific-popup.min.js"></script>
-    <script src="assetsClient/js/imgfix.min.js"></script>
+    <script src="/assetsClient/js/scrollreveal.min.js"></script>
+    <script src="/assetsClient/js/parallax.min.js"></script>
+    <script src="/assetsClient/js/waypoints.min.js"></script>
+    <script src="/assetsClient/js/jquery.counterup.min.js"></script>
+    <script src="/assetsClient/js/jquery.magnific-popup.min.js"></script>
+    <script src="/assetsClient/js/imgfix.min.js"></script>
 
     <!-- Global Init -->
-    <script src="assetsClient/js/custom.js"></script>
+    <script src="/assetsClient/js/custom.js"></script>
 </body>
 
 </html>

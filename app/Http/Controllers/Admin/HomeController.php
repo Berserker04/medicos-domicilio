@@ -22,8 +22,8 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function quotes()
+    public function appointment()
     {
-        return view('admin.quotes');
+        return view('admin.appointment.indexAdmin');
     }
 }

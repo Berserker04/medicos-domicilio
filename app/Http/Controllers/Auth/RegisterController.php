@@ -65,12 +65,14 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        $data['image']->move('uploads', $data['image']->getClientOriginalName());
+
         $person = Person::create([
             "firstName" => $data['firstName'],
             "lastName" => $data['lastName'],
             "document" => $data['document'],
             "birthDate" => $data['birthDate'],
-            "image" => $data['image'],
+            "image" => $data['image']->getClientOriginalName(),
             "state" => 1
         ]);
 

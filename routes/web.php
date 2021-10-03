@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin\AppointmentController;
+use App\Http\Controllers\Admin\DoctorController;
 use App\Http\Controllers\Admin\HomeController as AdminHomeController;
 use App\Http\Controllers\Client\HomeController;
 use Illuminate\Support\Facades\Route;
@@ -21,5 +23,11 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/citas', [AdminHomeController::class, 'quotes'])->name('admin.quotes');
+// Route::get('/citas', [AdminHomeController::class, 'appointment'])->name('admin.appointment');
+
+// Route::get('/doctores', [DoctorController::class, 'index'])->name('admin.doctor');
+Route::resource('/citas', AppointmentController::class);
+Route::resource('/doctores', DoctorController::class);
+
+
 Route::get('/', [HomeController::class, 'index'])->name('client.home');

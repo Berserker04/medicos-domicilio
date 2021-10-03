@@ -87,7 +87,7 @@
                     <div class="card rounded-0 overflow-hidden shadow-none border mb-5 mb-lg-0">
                         <div class="row g-0">
                             <div class="col-12 order-1 col-xl-8 d-flex align-items-center justify-content-center border-end">
-                                <img src="assets/images/error/auth-img-7.png" class="img-fluid" alt="">
+                                <img src="/assets/images/error/auth-img-7.png" class="img-fluid" alt="">
                             </div>
                             <div class="col-12 col-xl-4 order-xl-2">
                                 <div class="card-body p-4 p-sm-5">
@@ -173,7 +173,7 @@
                                             </div> --}}
                                         <div class="col-12 text-center">
                                             <p class="mb-0">¿Aún no tienes una cuenta? <a
-                                                    href="authentication-signup-with-header-footer.html">Registrate aquí
+                                                href="{{ route('register') }}">Registrate aquí
                                                 </a></p>
                                         </div>
                                 </div>
