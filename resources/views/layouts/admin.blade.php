@@ -129,10 +129,10 @@
         <aside class="sidebar-wrapper" data-simplebar="true">
             <div class="sidebar-header">
                 <div>
-                    <img src="/assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
+                    <img src="/images/logo.png" height="40"  alt="Webmania" class="logo-icon" />
                 </div>
                 <div>
-                    <h4 class="logo-text">Onedash</h4>
+                    <h4 class="logo-text">M domicilo</h4>
                 </div>
                 <div class="toggle-icon ms-auto"> <i class="bi bi-list"></i>
                 </div>
@@ -168,6 +168,9 @@
         </main>
         <!--end page main-->
 
+        <footer class="bg-white border-top p-3 text-center">
+            <p class="mb-0">Copyright © 2021. Todos los derechos reservados.</p>
+        </footer>
 
         <!--start overlay-->
         <div class="overlay nav-toggle-icon"></div>

@@ -43,7 +43,8 @@
                         <div class="col">
                             <div class="card border shadow-none mb-0">
                                 <div class="card-body text-center">
-                                    <img src="/uploads/{{ $doctor->person['image'] }}" class="img-fluid mb-3" alt="" />
+                                    <img src="{{ $doctor->person['image'] == null ? '/uploads/doctor.jpg' : "/uploads/$doctor->person['image']" }}"
+                                        class="img-fluid mb-3" alt="" />
                                     <h6 class="product-title">{{ $doctor->person['firstName'] }}</h6>
                                     <p class="product-price fs-5 mb-1"><span>{{ $doctor->typeProfession['name'] }}</span>
                                     </p>

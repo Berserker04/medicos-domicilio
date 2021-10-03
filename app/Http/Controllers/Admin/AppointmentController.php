@@ -23,8 +23,15 @@ class AppointmentController extends Controller
     public function index()
     {
         $person = $this->person();
-
-        return view('admin.appointment.indexAdmin', compact("person"));
+        if (Auth::user()->role_id == 1) {
+            $appointments = Appointment::all();
+            return view('admin.appointment.indexAdmin', compact("person", "appointments"));
+        } else if (Auth::user()->role_id == 2) {
+            $appointments = Appointment::with("client", "doctor")->where("doctor_id", Auth::user()->id)->get();
+            return view('admin.appointment.index', compact("person", "appointments"));
+        }
+        $appointments = Appointment::with("client", "doctor")->where("client_id", Auth::user()->id)->get();
+        return view('admin.appointment.index', compact("person", "appointments"));
     }
 
     public function person()
@@ -60,7 +67,7 @@ class AppointmentController extends Controller
         $appointment->direction = $request["direction"];
         $appointment->cellPhone = $request["cellPhone"];
         $appointment->description = $request["description"];
-        $appointment->state = 1;
+        $appointment->state = "Pendiente";
         $appointment->client_id = Auth::user()->id;
         $appointment->save();
 
@@ -86,7 +93,12 @@ class AppointmentController extends Controller
      */
     public function edit($id)
     {
-        //
+        $person = $this->person();
+        $appointment = Appointment::find($id);
+        $doctors = User::with("person")
+            ->where("role_id", "=", 2)
+            ->get();
+        return view('admin.appointment.edit', compact("person", "appointment", "doctors"));
     }
 
     /**
@@ -98,7 +110,15 @@ class AppointmentController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $appointment = Appointment::find($id);
+        $appointment->date = $request['date'];
+        $appointment->time = $request['time'];
+        $appointment->doctor_id = $request['doctor_id'];
+        $appointment->state = "Agendada";
+        $appointment->save();
+
+
+        return redirect('/citas');
     }
 
     /**
@@ -109,6 +129,10 @@ class AppointmentController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $appointment = Appointment::find($id);
+        $appointment->state = "Cancelada";
+        $appointment->save();
+
+        return redirect('/citas');
     }
 }

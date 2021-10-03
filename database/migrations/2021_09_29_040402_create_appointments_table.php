@@ -23,7 +23,7 @@ class CreateAppointmentsTable extends Migration
             $table->time("time")->nullable();
             $table->integer("client_id");
             $table->integer("doctor_id")->nullable();
-            $table->integer("state");
+            $table->string("state");
             $table->timestamps();
         });
     }

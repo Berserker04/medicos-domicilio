@@ -1,19 +1,21 @@
 @extends('layouts.admin')
 
 @section('content')
-    {{-- <div class="card">
-        <div class="card-body">
-            <div class="row align-items-center">
-                <div class="col-lg-3 col-xl-2">
-                    <a href="/citas/create" class="btn btn-primary mb-3 mb-lg-0"><i class="bi bi-plus-square-fill"></i>
-                        Agregar cita</a>
+    @if (Auth::user()->role_id == 3)
+        <div class="card">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-xl-2">
+                        <a href="/citas/create" class="btn btn-primary mb-3 mb-lg-0"><i class="bi bi-plus-square-fill"></i>
+                            Agregar cita</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div> --}}
+    @endif
 
     <!--end breadcrumb-->
-    <h6 class="mb-0 text-uppercase">DataTable Example</h6>
+    <h6 class="mb-0 text-uppercase">Citas</h6>
     <hr />
     <div class="card">
         <div class="card-body">
@@ -47,11 +49,10 @@
                                 <td>{{ $item->description }}</td>
                                 <td>{{ $item->state }}</td>
                                 <td>
+                                    {{-- <a href="/doctores/1/edit" class="btn btn-sm btn-outline-primary"><i
+                                            class="bi bi-pencil-fill"></i>
+                                        Editar</a> --}}
                                     @if ($item->state != 'Cancelada')
-                                        <a
-                                            href="/citas/{{ $item->id }}/edit" class="btn btn-sm btn-outline-primary"><i
-                                                class="bi bi-pencil-fill"></i>
-                                            Editar</a>
                                         <button {{ $item->state == 'Cancelada' ? 'disabled' : '' }} form="form-delete"
                                             class="btn btn-sm btn-outline-danger"><i class="bi bi-trash-fill"></i>
                                             Cancelar</button>
@@ -60,7 +61,6 @@
                                             @csrf
                                         </form>
                                     @endif
-
                                 </td>
                             </tr>
                         @endforeach
